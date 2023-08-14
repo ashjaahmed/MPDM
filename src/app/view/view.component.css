@@ -1,0 +1,38 @@
+.container-small {
+    
+    padding-right: 250px;
+    padding-left: 250px;
+ 
+  }
+  .letterhead{
+      padding-left: 50px;
+    padding-right: 300px;
+    word-wrap:break-word;
+  }
+.sidebar{
+    padding-left:550px;
+    padding-right:50px;
+
+}
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  .left {
+    left: 0;
+    background-color: #111;
+     width:70%
+  }
+  
+  .right {
+    right: 0;
+    background-color: red;
+    width:30%
+  }
+  

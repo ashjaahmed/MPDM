@@ -1,0 +1,71 @@
+
+<p>Home works</p>
+
+<ul  style="font-family: 'Times New Roman';font-size:xx-large;" class="nav justify-content-center">
+  <li  class="nav-item">
+    <a style="color:rgb(25, 135, 84)" class="nav-link active" aria-current="page" href="#">Temp</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Temp</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Temp</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link ">Temp</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link ">Temp</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link ">Temp</a>
+  </li>
+</ul>
+<router-outlet></router-outlet>
+
+<div class="container">
+  <hr>
+<div class="row">
+  <div class="col-3" *ngFor="let item of allitem" >
+    <div class="card-deck" >
+      <br>
+      <div class="card">
+        <img class="card-img-top" [src]="item.image" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">{{item.title}}</h5>
+            <p class="card-text">{{item.article}}...</p>
+            <a href="#" class="card-link" style="color:rgb(25, 135, 84)" routerLink="/news" >Read News</a>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+  <div class="container">
+    <div class="row">
+      <div class="col-5">
+        <br> 
+        <img src="" width="100%" alt="">
+      </div>
+      <div class="col-5">
+        <br> 
+        <h2>This is a dummy  text  of 14 words max bit longer</h2>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+
+</div>
+  <nav class="nav justify-content-center" style="font-family: 'Times New Roman';" aria-label="Page navigation example">
+    <ul class="pagination">
+      <li class="page-item" ><a style="color:rgb(25, 135, 84)"class="page-link" href="#">Previous</a></li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a style="color:rgb(25, 135, 84)" class="page-link" href="#">Next</a></li>
+    </ul>
+  </nav>
+
+
+  
