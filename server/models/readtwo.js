@@ -2,10 +2,10 @@ const mongoose=require("mongoose");
 const Schema=mongoose.Schema;
 
 const postSchema=new Schema({
-    image:{type:String},
+    newsId:{type:Number},
+    para:{type:String},
     title:{type:String},
-    article:{type:String},
-    nId:{type:Number}
+    image:{type:String}
 });
 
-module.exports=mongoose.model('report',postSchema);
+module.exports=mongoose.model('explore',postSchema);

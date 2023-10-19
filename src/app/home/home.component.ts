@@ -7,15 +7,21 @@ import { NewsService } from '../news.service';
 })
 export class HomeComponent {
   public allitem:any=[];
+  public newArray:any=[];
   public arr:any=[1,2,3,4,5,6,7,8,9,10,11,12];
-  constructor(private _newsService:NewsService){
+  constructor(private _newsService:NewsService ){
+    
   }
   
   ngOnInit(){
     this._newsService.getNews()
-    .subscribe((result: any)=>this.allitem=result);
-    for(var i in this.allitem){
-      console.log(this.allitem[i]);
-    }
+    .subscribe((result: any)=>{
+      this.allitem=result;
+    this.copytonewArray();
+    })
+  }
+  copytonewArray(){
+    this.newArray=this.allitem.slice(1,5);
+    console.log(this.newArray);
   }
 }
